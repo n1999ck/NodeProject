@@ -1,0 +1,24 @@
+{
+  "name": "nodeproject",
+  "version": "1.0.0",
+  "description": "Project for server-side programming class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n1999ck/NodeProject.git"
+  },
+  "author": "nick miller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n1999ck/NodeProject/issues"
+  },
+  "homepage": "https://github.com/n1999ck/NodeProject#readme",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
