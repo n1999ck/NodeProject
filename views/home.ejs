@@ -12,7 +12,7 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
-<body class="bg-dark text-white">
+<body class="bg-dark text-white d-flex flex-column min-vh-100">
   
   <header class="container-fluid d-block">
     <h1 class="h1 text-center"><%= nasaData.title %></h1>
@@ -35,12 +35,15 @@
     </div>
 
       <div class="container">
-        <p class="text-center"> <%= nasaData.explanation %> </p>
+        <p class="text-center lh-lg"> <%= nasaData.explanation %> </p>
       </div>
 
   </main>
-  <footer>
-    <!-- place footer here -->
+  <footer class="bg-black bg-opacity-25 p-2">
+    <div class="container">
+      <p class="text-start">Site created by Nick Miller
+      <a class="link-light float-end" href="https://github.com/n1999ck/NodeProject">Github</a></p>
+    </div>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
