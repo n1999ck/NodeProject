@@ -8,7 +8,6 @@ var axios = require('axios').default;
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use('/static', express.static('public'));
-app.use(express.static('/public/images'));
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res){
