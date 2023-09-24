@@ -13,7 +13,6 @@ app.set('view engine', 'ejs');
 
 app.get('/', function(req, res){
     axios.get('https://api.nasa.gov/planetary/apod?api_key=O6WqJw9BMceGV0Ny79hoBa934YAYs1HWKs5ycCk7').then(function(response){
-        console.log(response.data);
         res.render('home.ejs', {nasaData: response.data});
     })
 })

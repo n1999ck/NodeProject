@@ -14,14 +14,14 @@
 
 <body class="bg-dark text-white d-flex flex-column min-vh-100">
   
-  <header class="container-fluid d-block">
+  <header class="container-fluid d-block mt-5">
     <h1 class="h1 text-center"><%= nasaData.title %></h1>
     <br>
     <h2 class="h2 text-center"><%= nasaData.date %></h2>
   </header>
   <main>
     
-    <div class="container">
+    <div class="container mt-5">
       <% if(nasaData.media_type === 'image') { %>
         <img src="<%= nasaData.img %>" class="img-fluid" alt="<%= nasaData.alt %>">
       <% } else { %>
@@ -34,12 +34,12 @@
       
     </div>
 
-      <div class="container">
+      <div class="container my-5">
         <p class="text-center lh-lg"> <%= nasaData.explanation %> </p>
       </div>
 
   </main>
-  <footer class="bg-black bg-opacity-25 p-2">
+  <footer class="bg-black bg-opacity-25 p-2 mt-auto">
     <div class="container">
       <p class="text-start">Site created by Nick Miller using <a class="link-light" href="https://api.nasa.gov/">NASA's APOD API</a>
       <a class="link-light float-end" href="https://github.com/n1999ck/NodeProject">Github</a></p>
